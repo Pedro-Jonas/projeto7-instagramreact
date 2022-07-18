@@ -13,7 +13,7 @@ function FundoMobile(){
         {name:"person-outline"},
     ]
     return(
-    <div class="fundo-mobile">
+    <div className="fundo-mobile">
         {IconsInfo.map((itens) => <Icons name={itens.name}/>)}
     </div>
     );

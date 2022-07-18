@@ -1,8 +1,8 @@
 function Usuario(){
     return(
-    <div class="usuario">
+    <div className="usuario">
         <img src="/img/catanacomics.svg" />
-        <div class="texto">
+        <div className="texto">
             <strong>catanacomics</strong>
             Catana
         </div>
@@ -11,22 +11,22 @@ function Usuario(){
 
 function Sugestoes(props){
     return(
-    <div class="sugestoes">
-        <div class="titulo">
+    <div className="sugestoes">
+        <div className="titulo">
             Sugestões para você
             <div>Ver tudo</div>
         </div>
 
-        <div class="sugestao">
-            <div class="usuario">
+        <div className="sugestao">
+            <div className="usuario">
             <img src={props.img} />
-            <div class="texto">
-                <div class="nome">{props.nameuser}</div>
-                <div class="razao">{props.razao}</div>
+            <div className="texto">
+                <div className="nome">{props.nameuser}</div>
+                <div className="razao">{props.razao}</div>
                 </div>
             </div>
 
-            <div class="seguir">Seguir</div>
+            <div className="seguir">Seguir</div>
         </div>
     </div>
     )
@@ -34,14 +34,14 @@ function Sugestoes(props){
 
 function Links(){
     return(
-    <div class="links">
+    <div className="links">
         Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes • Hashtags • Idioma
     </div>);
 }
 
 function Copyrigth(){
     return(
-        <div class="copyright">
+        <div className="copyright">
             © 2021 INSTAGRAM DO FACEBOOK
         </div>
     )
@@ -57,7 +57,7 @@ function Sidebar(){
 
     ]
     return(
-    <div class="sidebar">
+    <div className="sidebar">
         <Usuario/>
         {InfoSidebar.map((item) => <Sugestoes  img={item.img} nameuser={item.nameuser} razao={item.razao}/>)}
         <Links/>
