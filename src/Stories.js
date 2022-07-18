@@ -10,7 +10,6 @@ function Story(props){
     </div>);
 };
 
-
 function Stories(){
     let InfoStories = [
         {src: "/img/9gag.svg", nameuser: "9gag"},

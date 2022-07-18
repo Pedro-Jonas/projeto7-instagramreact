@@ -16,7 +16,7 @@ function LogoMobile(){
     )
 }
   
-function instagramMobile(){
+function InstagramMobile(){
     return(
       <div class="instagram-mobile">
         <img src="/img/logo.png" />
@@ -56,7 +56,7 @@ function Container(){
       <div class="container">
             <Logo/>
             <LogoMobile/>
-            <instagramMobile/>
+            <InstagramMobile/>
             <Pesquisa/>
             <Icones/>
             <IconesMobile/>
